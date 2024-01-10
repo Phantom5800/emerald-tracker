@@ -2,325 +2,325 @@
 	{
 		"name": "Acro Bike",
 		"type": "toggle",
-		"img": "/images/items/acrobike.png",
+		"img": "images/items/acrobike.png",
 		"codes": "acrobike,acro"
 	},
 	{
 		"name": "Mach Bike",
 		"type": "toggle",
-		"img": "/images/items/machbike.png",
+		"img": "images/items/machbike.png",
 		"codes": "mach,machbike"
 	},
 	{
 		"name": "Letter",
 		"type": "toggle",
-		"img": "/images/items/letter.png",
+		"img": "images/items/letter.png",
 		"codes": "letter"
 	},
 	{
 		"name": "Devon Goods",
 		"type": "toggle",
-		"img": "/images/items/devongoods.png",
+		"img": "images/items/devongoods.png",
 		"codes": "devongoods,goods"
 	},
 	{
 		"name": "Old Rod",
 		"type": "toggle",
-		"img": "/images/items/oldrod.png",
+		"img": "images/items/oldrod.png",
 		"codes": "oldrod"
 	},
 	{
 		"name": "Good Rod",
 		"type": "toggle",
-		"img": "/images/items/goodrod.png",
+		"img": "images/items/goodrod.png",
 		"codes": "goodrod"
 	},
 	{
 		"name": "Super Rod",
 		"type": "toggle",
-		"img": "/images/items/superrod.png",
+		"img": "images/items/superrod.png",
 		"codes": "superrod"
 	},
 	{
 		"name": "PokéBlock Case",
 		"type": "toggle",
-		"img": "/images/items/pokeblock.png",
+		"img": "images/items/pokeblock.png",
 		"codes": "pokeblock"
 	},
 	{
 		"name": "Item Finder",
 		"type": "toggle",
-		"img": "/images/items/itemfinder.png",
+		"img": "images/items/itemfinder.png",
 		"codes": "itemfinder"
 	},
 	{
 		"name": "Go-Goggles",
 		"type": "toggle",
-		"img": "/images/items/gogoggles.png",
+		"img": "images/items/gogoggles.png",
 		"codes": "gogoggles,goggles"
 	},
 	{
 		"name": "Meteorite",
 		"type": "toggle",
-		"img": "/images/items/meteorite.png",
+		"img": "images/items/meteorite.png",
 		"codes": "meteorite,meteor"
 	},
 	{
 		"name": "Magma Emblem",
 		"type": "toggle",
-		"img": "/images/items/magmaemblem.png",
+		"img": "images/items/magmaemblem.png",
 		"codes": "magmaemblem,emblem"
 	},
 	{
 		"name": "Scanner",
 		"type": "toggle",
-		"img": "/images/items/scanner.png",
+		"img": "images/items/scanner.png",
 		"codes": "scanner"
 	},
-	// {
-	//     "name": "Wailmer Pail",
-	//     "type": "toggle",
-	//     "img": "/images/items/wailmerpail.png",
-	//     "codes": "wailmerpail,pail"
-	// },
+	{
+	    "name": "Wailmer Pail",
+	    "type": "toggle",
+	    "img": "images/items/wailmerpail.png",
+	    "codes": "wailmerpail,pail"
+	},
 	{
 		"name": "Devon Scope",
 		"type": "toggle",
-		"img": "/images/items/devonscope.png",
+		"img": "images/items/devonscope.png",
 		"codes": "devonscope,scope"
 	},
 	{
 		"name": "S.S. Ticket",
 		"type": "toggle",
-		"img": "/images/items/ssticket.png",
+		"img": "images/items/ssticket.png",
 		"codes": "ssticket"
 	},
 	{
 		"name": "Room Key 1",
 		"type": "toggle",
-		"img": "/images/items/roomkey1.png",
+		"img": "images/items/roomkey1.png",
 		"codes": "roomkey1"
 	},
 	{
 		"name": "Room Key 2",
 		"type": "toggle",
-		"img": "/images/items/roomkey2.png",
+		"img": "images/items/roomkey2.png",
 		"codes": "roomkey2"
 	},
 	{
 		"name": "Room Key 4",
 		"type": "toggle",
-		"img": "/images/items/roomkey4.png",
+		"img": "images/items/roomkey4.png",
 		"codes": "roomkey4"
 	},
 	{
 		"name": "Room Key 6",
 		"type": "toggle",
-		"img": "/images/items/roomkey6.png",
+		"img": "images/items/roomkey6.png",
 		"codes": "roomkey6"
 	},
 	{
 		"name": "Storage Key",
 		"type": "toggle",
-		"img": "/images/items/storagekey.png",
+		"img": "images/items/storagekey.png",
 		"codes": "storagekey"
 	},
 	{
 		"name": "Basement Key",
 		"type": "toggle",
-		"img": "/images/items/basementkey.png",
+		"img": "images/items/basementkey.png",
 		"codes": "basementkey"
 	},
 	{
 		"name": "Harbor Mail",
 		"type": "toggle",
-		"img": "/images/items/harbormail.png",
+		"img": "images/items/harbormail.png",
 		"codes": "harbormail"
 	},
 	{
 		"name": "Stone Badge",
 		"type": "toggle",
-		"img": "/images/items/stonebadge.png",
+		"img": "images/items/stonebadge.png",
 		"codes": "stonebadge"
 	},
 	{
 		"name": "Knuckle Badge",
 		"type": "toggle",
-		"img": "/images/items/knucklebadge.png",
+		"img": "images/items/knucklebadge.png",
 		"codes": "knucklebadge"
 	},
 	{
 		"name": "Dynamo Badge",
 		"type": "toggle",
-		"img": "/images/items/dynamobadge.png",
+		"img": "images/items/dynamobadge.png",
 		"codes": "dynamobadge"
 	},
 	{
 		"name": "Heat Badge",
 		"type": "toggle",
-		"img": "/images/items/heatbadge.png",
+		"img": "images/items/heatbadge.png",
 		"codes": "heatbadge"
 	},
 	{
 		"name": "Balance Badge",
 		"type": "toggle",
-		"img": "/images/items/balancebadge.png",
+		"img": "images/items/balancebadge.png",
 		"codes": "balancebadge"
 	},
 	{
 		"name": "Feather Badge",
 		"type": "toggle",
-		"img": "/images/items/featherbadge.png",
+		"img": "images/items/featherbadge.png",
 		"codes": "featherbadge"
 	},
 	{
 		"name": "Mind Badge",
 		"type": "toggle",
-		"img": "/images/items/mindbadge.png",
+		"img": "images/items/mindbadge.png",
 		"codes": "mindbadge"
 	},
 	{
 		"name": "Rain Badge",
 		"type": "toggle",
-		"img": "/images/items/rainbadge.png",
+		"img": "images/items/rainbadge.png",
 		"codes": "rainbadge"
 	},
 	{
 		"name": "HM01 - Cut",
 		"type": "toggle",
-		"img": "/images/items/hm01.png",
+		"img": "images/items/hm01.png",
 		"codes": "hm01"
 	},
 	{
 		"name": "HM02 - Fly",
 		"type": "toggle",
-		"img": "/images/items/hm02.png",
+		"img": "images/items/hm02.png",
 		"codes": "hm02"
 	},
 	{
 		"name": "HM03 - Surf",
 		"type": "toggle",
-		"img": "/images/items/hm03.png",
+		"img": "images/items/hm03.png",
 		"codes": "hm03"
 	},
 	{
 		"name": "HM04 - Strength",
 		"type": "toggle",
-		"img": "/images/items/hm04.png",
+		"img": "images/items/hm04.png",
 		"codes": "hm04"
 	},
 	{
 		"name": "HM05 - Flash",
 		"type": "toggle",
-		"img": "/images/items/hm05.png",
+		"img": "images/items/hm05.png",
 		"codes": "hm05"
 	},
 	{
 		"name": "HM06 - Rock Smash",
 		"type": "toggle",
-		"img": "/images/items/hm06.png",
+		"img": "images/items/hm06.png",
 		"codes": "hm06"
 	},
 	{
 		"name": "HM07 - Waterfall",
 		"type": "toggle",
-		"img": "/images/items/hm07.png",
+		"img": "images/items/hm07.png",
 		"codes": "hm07"
 	},
 	{
 		"name": "HM08 - Dive",
 		"type": "toggle",
-		"img": "/images/items/hm08.png",
+		"img": "images/items/hm08.png",
 		"codes": "hm08"
 	},
 	{
 		"name": "Recover Goods",
 		"type": "toggle",
-		"img": "/images/events/recovergoods.png",
+		"img": "images/events/recovergoods.png",
 		"codes": "recovergoods"
 	},
 	{
 		"name": "Deliver Letter",
 		"type": "toggle",
-		"img": "/images/events/stevenletter.png",
+		"img": "images/events/stevenletter.png",
 		"codes": "stevenletter"
 	},
 	{
 		"name": "Deliver Goods",
 		"type": "toggle",
-		"img": "/images/events/sterngoods.png",
+		"img": "images/events/sterngoods.png",
 		"codes": "sterngoods"
 	},
 	{
 		"name": "Magma - Steal Meteorite",
 		"type": "toggle",
-		"img": "/images/events/stealmeteor.png",
+		"img": "images/events/stealmeteor.png",
 		"codes": "stealmeteor"
 	},
 	{
 		"name": "Magma - Clear Base",
 		"type": "toggle",
-		"img": "/images/events/clearmagma.png",
+		"img": "images/events/clearmagma.png",
 		"codes": "clearmagma"
 	},
 	{
 		"name": "Clear Weather Institute",
 		"type": "toggle",
-		"img": "/images/events/weatherins.png",
+		"img": "images/events/weatherins.png",
 		"codes": "weatherins"
 	},
 	{
 		"name": "Aqua - Steal Submarine",
 		"type": "toggle",
-		"img": "/images/events/stealsub.png",
+		"img": "images/events/stealsub.png",
 		"codes": "stealsub"
 	},
 	{
 		"name": "Aqua - Clear Base",
 		"type": "toggle",
-		"img": "/images/events/clearaqua.png",
+		"img": "images/events/clearaqua.png",
 		"codes": "clearaqua"
 	},
 	{
 		"name": "Defeat Norman",
 		"type": "toggle",
-		"img": "/images/settings/norman.png",
+		"img": "images/settings/norman.png",
 		"codes": "defeatnorman"
 	},
 	{
 		"name": "Become Champion",
 		"type": "toggle",
-		"img": "/images/events/becomechampion.png",
+		"img": "images/events/becomechampion.png",
 		"codes": "becomechampion"
 	},
 	{
 		"name": "Defeat Steven",
 		"type": "toggle",
-		"img": "/images/events/defeatsteven.png",
+		"img": "images/events/defeatsteven.png",
 		"codes": "defeatsteven"
 	},
 	{
 		"name": "Clear Space Center",
 		"type": "toggle",
-		"img": "/images/events/spacecenter.png",
+		"img": "images/events/spacecenter.png",
 		"codes": "spacecenter"
 	},
 	{
 		"name": "Receive Gift from Steven",
 		"type": "toggle",
-		"img": "/images/events/stevendive.png",
+		"img": "images/events/stevendive.png",
 		"codes": "stevendive"
 	},
 	{
 		"name": "Release Kyogre",
 		"type": "toggle",
-		"img": "/images/events/releasekyogre.png",
+		"img": "images/events/releasekyogre.png",
 		"codes": "releasekyogre"
 	},
 	{
 		"name": "Release Rayquaza",
 		"type": "toggle",
-		"img": "/images/events/releaserayquaza.png",
+		"img": "images/events/releaserayquaza.png",
 		"codes": "releaserayquaza"
 	},
 	{
@@ -349,11 +349,11 @@
 		"img": "images/settings/norman0.png",
 		"initial_stage_idx": 4,
 		"allow_disabled": false,
-		"codes": "normanreq",
 		"stages": [
 			{
 				"img": "images/settings/norman0.png",
-				"name": "Norman Requirement - 0"
+				"name": "Norman Requirement - 0",
+				"codes": "normanreq"
 			},
 			{
 				"img": "images/settings/norman1.png",
@@ -411,11 +411,11 @@
 		"img": "images/settings/e4req0.png",
 		"initial_stage_idx": 8,
 		"allow_disabled": false,
-		"codes": "e4req",
 		"stages": [
 			{
 				"img": "images/settings/e4req0.png",
-				"name": "Elite 4 Requirement - 0"
+				"name": "Elite 4 Requirement - 0",
+				"codes": "e4req"
 			},
 			{
 				"img": "images/settings/e4req1.png",
@@ -454,7 +454,7 @@
 	{
 		"name": "Gyms Beaten",
 		"type": "progressive",
-		"img": "/images/settings/gyms0.png",
+		"img": "images/settings/gyms0.png",
 		"allow_disabled": false,
 		"codes": "gyms",
 		"stages": [
@@ -998,13 +998,13 @@
 		"stages": [
 			{
 				"name": "Goal - Become Champion",
-				"img": "/images/events/becomechampion.png",
+				"img": "images/events/becomechampion.png",
 				"codes": "goal,goal_e4",
 				"inherit_codes": false
 			},
 			{
 				"name": "Goal - Defeat Steven",
-				"img": "/images/events/defeatsteven.png",
+				"img": "images/events/defeatsteven.png",
 				"codes": "goal,goal_steven",
 				"inherit_codes": false
 			},

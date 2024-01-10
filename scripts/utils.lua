@@ -5,14 +5,8 @@ function has_value(t, val)
 	return 0
 end
 
-function has(item, amount)
-	local count = Tracker:ProviderCountForCode(item)
-	amount = tonumber(amount)
-	if not amount then
-		return count > 0
-	else
-		return count >= amount
-	end
+function has(item)
+	return Tracker:ProviderCountForCode(item) > 0
 end
 
 function progCount(code)
