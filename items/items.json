@@ -456,11 +456,11 @@
 		"type": "progressive",
 		"img": "images/settings/gyms0.png",
 		"allow_disabled": false,
-		"codes": "gyms",
 		"stages": [
 			{
 				"img": "images/settings/gyms0.png",
-				"name": "Gyms Beaten - 0"
+				"name": "Gyms Beaten - 0",
+				"codes": "gyms"
 			},
 			{
 				"img": "images/settings/gyms1.png",

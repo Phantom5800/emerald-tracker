@@ -3,7 +3,7 @@
 	"game_name": "Pokémon Emerald",
 	"package_version": "0.0.2.3",
 	"package_uid": "ap_emerald",
-	"author": "AliceMousie",
+	"author": "AliceMousie and Phantom5800",
 	"variants": {
 		"standard": {
 			"display_name": "Map Tracker"
