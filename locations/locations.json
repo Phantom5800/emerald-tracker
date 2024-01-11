@@ -99,8 +99,7 @@
 					{
 						"name": "Defeat Norman",
 						"hosted_item": "defeatnorman",
-						"access_rules": ["$norman_open"],
-						"item_count": 1
+						"access_rules": ["$norman_open"]
 					},
 					{
 						"name": "Gym - Balance Badge",
@@ -2329,7 +2328,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "TM19 from Girl near Berries",
+						"name": "TM19 from Girl near Berries (Need Grass Mon)",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
 					}
