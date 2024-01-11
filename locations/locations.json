@@ -348,11 +348,6 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gift from Boy in Apartments",
-						"visibility_rules": ["op_npc_on"],
-						"item_count": 1
-					},
-					{
 						"name": "Quick Claw from School Teacher",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
@@ -1779,19 +1774,25 @@
 				"name": "Route 119",
 				"sections": [
 					{
-						"name": "Item East of Mud Slope",
+						"name": "Items in South Tall Grass",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access"],
-						"item_count": 1
+						"item_count": 2
 					},
 					{
-						"name": "Item in South Tall Grass 2",
+						"name": "Item Across River South",
+						"access_rules": ["$can_surf,$rt119_south_access"],
 						"visibility_rules": ["op_ovw_on"],
-						"access_rules": ["$rt119_south_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Item Near Mud Slope",
+						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$rt119_south_access"],
+						"item_count": 1
+					},
+					{
+						"name": "Item East of Mud Slope",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access"],
 						"item_count": 1
@@ -1803,34 +1804,13 @@
 						"item_count": 1
 					},
 					{
-						"name": "Item Above North Waterfall 1",
+						"name": "Items Above North Waterfall",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": [
 							"$rt119_south_access,$can_waterfall,acrobike",
 							"$rt121_access,$can_waterfall,acrobike"
 						],
-						"item_count": 1
-					},
-					{
-						"name": "Item Above North Waterfall 2",
-						"visibility_rules": ["op_ovw_on"],
-						"access_rules": [
-							"$rt119_south_access,$can_waterfall,acrobike",
-							"$rt121_access,$can_waterfall,acrobike"
-						],
-						"item_count": 1
-					},
-					{
-						"name": "Item in South Tall Grass 1",
-						"visibility_rules": ["op_ovw_on"],
-						"access_rules": ["$rt119_south_access"],
-						"item_count": 1
-					},
-					{
-						"name": "Item Across River South",
-						"access_rules": ["$can_surf,$rt119_south_access"],
-						"visibility_rules": ["op_ovw_on"],
-						"item_count": 1
+						"item_count": 2
 					},
 					{
 						"name": "Hidden Item Across South Rail",
@@ -1857,7 +1837,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Item on River Bank",
+						"name": "Item South from Rival Battle",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access", "$rt121_access"],
 						"item_count": 1
@@ -2371,17 +2351,12 @@
 				"access_rules": ["$can_surf,$lilycove_access,$pass_hideout"],
 				"sections": [
 					{
-						"name": "B1F - Item in Center Room 1",
+						"name": "B1F - Items in Center Room",
 						"visibility_rules": ["op_ovw_on"],
-						"item_count": 1
+						"item_count": 2
 					},
 					{
 						"name": "B1F - Item in East Room",
-						"visibility_rules": ["op_ovw_on"],
-						"item_count": 1
-					},
-					{
-						"name": "B1F - Item in Center Room 2",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
@@ -2899,12 +2874,12 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "Item 1",
+						"name": "North Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
 					{
-						"name": "Item 2",
+						"name": "South Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					}
@@ -2922,17 +2897,17 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "Item 1",
+						"name": "North Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
 					{
-						"name": "Item 2",
+						"name": "Center Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
 					{
-						"name": "Item 3",
+						"name": "South Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					}
@@ -2950,12 +2925,12 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "Item 1",
+						"name": "North Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
 					{
-						"name": "Item 2",
+						"name": "South Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					}
@@ -2973,14 +2948,9 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "TM21 from Man in House",
+						"name": "Man in Bottom-Left House",
 						"visibility_rules": ["op_npc_on"],
-						"item_count": 1
-					},
-					{
-						"name": "TM27 from Man in House",
-						"visibility_rules": ["op_npc_on"],
-						"item_count": 1
+						"item_count": 2
 					}
 				],
 				"map_locations": [
