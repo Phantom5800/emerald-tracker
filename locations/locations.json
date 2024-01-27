@@ -837,6 +837,7 @@
 						"name": "Hidden Item in Springs",
 						"visibility_rules": ["op_hid_on"],
 						"access_rules": ["[$hid]"]
+						"item_count": 1
 					},
 					{
 						"name": "Go Goggles from Rival",
