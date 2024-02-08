@@ -347,6 +347,10 @@
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
 					},
+					{	"name": "Gift from Boy in Apartments",
+						"visibility_rules": ["op_npc_on"],
+						"item_count": 1
+					},
 					{
 						"name": "Quick Claw from School Teacher",
 						"visibility_rules": ["op_npc_on"],
@@ -568,7 +572,8 @@
 					{
 						"name": "Item East",
 						"visibility_rules": ["op_ovw_on"],
-						"access_rules": ["$mauville_access"]
+						"access_rules": ["$mauville_access"],
+						"item_count": 1
 					},
 					{
 						"name": "HM04 from Tunneler",
@@ -836,7 +841,7 @@
 					{
 						"name": "Hidden Item in Springs",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid]"]
+						"access_rules": ["[$hid]"],
 						"item_count": 1
 					},
 					{
