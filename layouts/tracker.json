@@ -139,6 +139,13 @@
 							}
 						},
 						{
+							"title": "Eastern Sea",
+							"content": {
+								"type": "map",
+								"maps": ["easternsea"]
+							}
+						},
+						{
 							"title": "Rt. 132-134",
 							"content": {
 								"type": "map",
