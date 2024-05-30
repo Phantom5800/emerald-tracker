@@ -58,6 +58,13 @@
 						"name": "Item",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
 					}
 				],
 				"map_locations": [
@@ -182,6 +189,20 @@
 						"name": "Hidden Item on Beach 3",
 						"access_rules": ["[$hid]"],
 						"visibility_rules": ["op_hid_on"],
+						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
+					},
+					{
+						"name": "Berry from Girl in Flower Shop",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 1
 					}
 				],
@@ -314,6 +335,13 @@
 						"access_rules": ["dynamobadge"],
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -667,6 +695,13 @@
 						"name": "TM28 from Fossil Maniac",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berry from Man Near House",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
 					}
 				],
 				"map_locations": [
@@ -804,6 +839,13 @@
 					{
 						"name": "Secret Power from Man Near Tree",
 						"visibility_rules": ["op_npc_on"],
+						"item_count": 1
+					},
+					{
+						"name": "Berry from Girl Near Berry Trees",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 1
 					}
 				],
@@ -1999,6 +2041,13 @@
 						"name": "Devon Scope from Steven",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "devonscope"
+					},
+					{
+						"name": "Berry from Lady Near Berry Trees",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
 					}
 				],
 				"map_locations": [
@@ -2169,6 +2218,13 @@
 						"name": "Pokeblock Case from Contest Hall",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "pokeblock"
+					},
+					{
+						"name": "Berry from Gentleman Above Ledges",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
 					}
 				],
 				"map_locations": [
@@ -2342,6 +2398,20 @@
 						"name": "Item Below Ledges",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berry from Berry Master's Wife",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
+					},
+					{
+						"name": "Berries from Berry Master",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
 					}
 				],
 				"map_locations": [
@@ -2563,6 +2633,13 @@
 						"access_rules": ["releaserayquaza"],
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm07"
+					},
+					{
+						"name": "Berries from Girl on Grass",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
 					}
 				],
 				"map_locations": [
