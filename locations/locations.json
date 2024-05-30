@@ -337,7 +337,14 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Flower Shop Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
+					},
+					{
+						"name": "North Berries",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -439,6 +446,13 @@
 						"item_count": 1
 					},
 					{
+						"name": "Berries Behind Smashable Rock",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
+					},
+					{
 						"name": "Item North Near Trainers",
 						"access_rules": ["$can_surf"],
 						"visibility_rules": ["op_ovw_on"],
@@ -472,6 +486,13 @@
 						"access_rules": ["[$hid],$rt115_beach_access"],
 						"visibility_rules": ["op_hid_on"],
 						"item_count": 1
+					},
+					{
+						"name": "North Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -580,6 +601,13 @@
 						"access_rules": ["sterngoods"],
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
 					}
 				],
 				"map_locations": [
@@ -697,6 +725,13 @@
 						"item_count": 1
 					},
 					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
+					},
+					{
 						"name": "Berry from Man Near House",
 						"visibility_rules": ["op_berry_on, op_npc_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -792,6 +827,13 @@
 						"access_rules": ["$lavaridge_access"],
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
 					}
 				],
 				"map_locations": [
@@ -840,6 +882,13 @@
 						"name": "Secret Power from Man Near Tree",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
 					},
 					{
 						"name": "Berry from Girl Near Berry Trees",
@@ -1051,6 +1100,13 @@
 						"visibility_rules": ["op_hid_on"],
 						"access_rules": ["[$hid]"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -1766,6 +1822,13 @@
 						"visibility_rules": ["op_hid_on"],
 						"access_rules": ["[$hid]"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -1809,6 +1872,13 @@
 						"access_rules": ["$can_surf"],
 						"visibility_rules": ["op_rod_off"],
 						"hosted_item": "goodrod"
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -1902,6 +1972,33 @@
 						"visibility_rules": ["op_hms_off"],
 						"access_rules": ["$rt119_south_access", "$rt121_access"],
 						"hosted_item": "hm02"
+					},
+					{
+						"name": "South Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$rt119_south_access, $can_surf"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
+					},
+					{
+						"name": "North Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$rt119_south_access", "$rt121_access"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
+					},
+					{
+						"name": "Berry Trees Above Waterfall",
+						"visibility_rules": ["op_berry_on"],
+						"access_rules": [
+							"$rt119_south_access,$can_waterfall,acrobike",
+							"$rt121_access,$can_waterfall,acrobike"
+						],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 2
 					}
 				],
 				"map_locations": [
@@ -2043,6 +2140,27 @@
 						"hosted_item": "devonscope"
 					},
 					{
+						"name": "South Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
+					},
+					{
+						"name": "Pond Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
+					},
+					{
+						"name": "Berry Tree in Side Area",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
+					},
+					{
 						"name": "Berry from Lady Near Berry Trees",
 						"visibility_rules": ["op_berry_on, op_npc_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -2167,6 +2285,20 @@
 						"visibility_rules": ["op_hid_on"],
 						"access_rules": ["[$hid],$can_cut"],
 						"item_count": 1
+					},
+					{
+						"name": "West Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
+					},
+					{
+						"name": "East Berry Trees",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 4
 					}
 				],
 				"map_locations": [
@@ -2374,6 +2506,13 @@
 						"name": "TM19 from Girl near Berries (Need Grass Mon)",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 6
 					}
 				],
 				"map_locations": [
@@ -2398,6 +2537,13 @@
 						"name": "Item Below Ledges",
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 12
 					},
 					{
 						"name": "Berry from Berry Master's Wife",
@@ -2915,7 +3061,15 @@
 			{
 				"name": "Route 130",
 				"access_rules": ["$rt124_access"],
-				"sections": [],
+				"sections": [
+					{
+						"name": "Mirage Island Berry",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
+					}
+				],
 				"map_locations": [
 					{
 						"map": "hoennmap",
