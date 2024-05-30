@@ -609,6 +609,26 @@
 		]
 	},
 	{
+		"name": "Randomize Berries",
+		"type": "progressive",
+		"loop": true,
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/settings/berries_off.png",
+				"name": "Randomize Berries - Off",
+				"codes": "op_berry,op_berry_off",
+				"inherit_codes": false
+			},
+			{
+				"img": "images/settings/berries_on.png",
+				"name": "Randomize Berries - On",
+				"codes": "op_berry,op_berry_on",
+				"inherit_codes": false
+			}
+		]
+	},
+	{
 		"name": "Randomize Key Items",
 		"type": "progressive",
 		"loop": true,

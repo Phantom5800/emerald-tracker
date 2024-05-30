@@ -31,41 +31,29 @@
 								"op_hms",
 								"op_bdg",
 								"op_hid",
+								"op_berry",
 								"op_npc",
-								"op_bik",
-								"op_rod"
+								"op_bik"
 							],
 							[
+								"op_rod",
 								"op_if",
 								"op_hm5",
 								"op_fwb",
-								"op_es",
+								"op_es"
+							],
+							[
 								"op_norm",
 								"normanreq",
 								"op_e4",
-								"e4req"
+								"e4req",
+								"goal"
 							]
 						]
-					}
-				]
-			},
-			{
-				"type": "array",
-				"orientation": "horizontal",
-				"margin": "0,0",
-				"content": [
-					{
-						"type": "itemgrid",
-						"item_margin": "2, 2",
-						"margin": "0,0",
-						"v_alignment": "top",
-						"rows": [["goal"]]
 					},
 					{
 						"type": "item",
-						"item_size": "178,24",
-						"margin": "2,2",
-						"v_alignment": "top",
+						"max_width": "200",
 						"item": "op_ff"
 					}
 				]
