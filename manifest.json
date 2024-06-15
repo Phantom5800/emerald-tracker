@@ -6,7 +6,8 @@
 	"author": "AliceMousie and Phantom5800",
 	"variants": {
 		"standard": {
-			"display_name": "Map Tracker"
+			"display_name": "Map Tracker",
+			"flags": ["ap"]
 		}
 	}
 }
