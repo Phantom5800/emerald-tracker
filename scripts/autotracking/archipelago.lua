@@ -69,7 +69,7 @@ end
 function onLocation(location_id, location_name)
 	local v = LOCATION_MAPPING[location_id]
 	if not v or not v[1] then
-		--print(string.format("onLocation: could not find location mapping for id %s", location_id))
+		print(string.format("onLocation: could not find location mapping for id %s (%s)", location_id, location_name))
 		return
 	end
 	local obj = Tracker:FindObjectForCode(v[1])
