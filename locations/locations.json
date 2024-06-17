@@ -8,6 +8,10 @@
 				"name": "Littleroot Town",
 				"sections": [
 					{
+						"name": "Pokeballs from Rival",
+						"item_count": 1
+					},
+					{
 						"name": "Amulet Coin from Mom",
 						"access_rules": ["balancebadge,recovergoods"],
 						"visibility_rules": ["op_npc_on"],
@@ -24,6 +28,12 @@
 						"access_rules": ["becomechampion"],
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "ssticket"
+					},
+					{
+						"name": "Event Tickets from Norman",
+						"access_rules": ["becomechampion"],
+						"visibility_rules": ["op_ki_on"],
+						"item_count": 4
 					}
 				],
 				"map_locations": [
@@ -90,6 +100,14 @@
 						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berries",
+						"access_rules": ["$can_cut"],
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -197,13 +215,6 @@
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 3
-					},
-					{
-						"name": "Berry from Girl in Flower Shop",
-						"visibility_rules": ["op_berry_on, op_npc_on"],
-						"chest_unopened_img": "images/items/berry.png",
-						"chest_opened_img": "images/items/berry_acquired.png",
-						"item_count": 1
 					}
 				],
 				"map_locations": [
@@ -323,6 +334,13 @@
 					{
 						"name": "Wailmer Pail from Flower Shop Lady",
 						"visibility_rules": ["op_ki_on"],
+						"item_count": 1
+					},
+					{
+						"name": "Berry from Girl in Flower Shop",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 1
 					},
 					{
@@ -447,6 +465,7 @@
 					},
 					{
 						"name": "Berries Behind Smashable Rock",
+						"access_rules": ["$meteorfalls_access,$can_rocksmash"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -604,6 +623,7 @@
 					},
 					{
 						"name": "Berries",
+						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -776,6 +796,11 @@
 				"name": "Route 113",
 				"access_rules": ["$fallarbor_access"],
 				"sections": [
+					{
+						"name": "Soot Sack from Glass Blower",
+						"visibility_rules": ["op_npc_on"],
+						"item_count": 1
+					},
 					{
 						"name": "Item Near Fallarbor South",
 						"visibility_rules": ["op_ovw_on"],
@@ -1869,12 +1894,13 @@
 					},
 					{
 						"name": "Good Rod from Fisherman ",
-						"access_rules": ["$can_surf"],
+						"access_rules": ["$can_surf", "rt119_south_access"],
 						"visibility_rules": ["op_rod_off"],
 						"hosted_item": "goodrod"
 					},
 					{
 						"name": "Berries",
+						"access_rules": ["$can_surf", "rt119_south_access"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1893,10 +1919,16 @@
 				"name": "Route 119",
 				"sections": [
 					{
-						"name": "Items in South Tall Grass",
+						"name": "Item in South Tall Grass 1",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access"],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "Item in South Tall Grass 2",
+						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$rt119_south_access"],
+						"item_count": 1
 					},
 					{
 						"name": "Item Across River South",
@@ -1923,13 +1955,22 @@
 						"item_count": 1
 					},
 					{
-						"name": "Items Above North Waterfall",
+						"name": "Item Above North Waterfall 1",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": [
 							"$rt119_south_access,$can_waterfall,acrobike",
 							"$rt121_access,$can_waterfall,acrobike"
 						],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "Item Above North Waterfall 2",
+						"visibility_rules": ["op_ovw_on"],
+						"access_rules": [
+							"$rt119_south_access,$can_waterfall,acrobike",
+							"$rt121_access,$can_waterfall,acrobike"
+						],
+						"item_count": 1
 					},
 					{
 						"name": "Hidden Item Across South Rail",
@@ -1956,7 +1997,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Item South from Rival Battle",
+						"name": "Item on River Bank",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access", "$rt121_access"],
 						"item_count": 1
@@ -1976,7 +2017,7 @@
 					{
 						"name": "South Berry Trees",
 						"visibility_rules": ["op_berry_on"],
-						"access_rules": ["$rt119_south_access, $can_surf"],
+						"access_rules": ["$rt119_south_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 2
@@ -1993,8 +2034,8 @@
 						"name": "Berry Trees Above Waterfall",
 						"visibility_rules": ["op_berry_on"],
 						"access_rules": [
-							"$rt119_south_access,$can_waterfall,acrobike",
-							"$rt121_access,$can_waterfall,acrobike"
+							"$rt119_south_access,$can_waterfall",
+							"$rt121_access,$can_waterfall"
 						],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -2155,6 +2196,7 @@
 					},
 					{
 						"name": "Berry Tree in Side Area",
+						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -2245,50 +2287,53 @@
 			},
 			{
 				"name": "Route 121",
-				"access_rules": ["$lilycove_access"],
 				"sections": [
 					{
 						"name": "Item in Maze 1",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Item in Maze 2",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Item Near Safari Zone",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item in Maze 1",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid]"],
+						"access_rules": ["[$hid],$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item in Maze 2",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid]"],
+						"access_rules": ["[$hid],$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item West of Grunts",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid],$rt121_access", "[$hid],$rt121_access"],
+						"access_rules": ["[$hid],$rt121_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item Behind Tree",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid],$can_cut"],
+						"access_rules": ["[$hid],$lilycove_access,$can_cut"],
 						"item_count": 1
 					},
 					{
 						"name": "West Berry Trees",
 						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$rt121_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
@@ -2296,6 +2341,7 @@
 					{
 						"name": "East Berry Trees",
 						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$lilycove_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
@@ -2574,9 +2620,14 @@
 				"access_rules": ["$can_surf,$lilycove_access,$pass_hideout"],
 				"sections": [
 					{
-						"name": "B1F - Items in Center Room",
+						"name": "B1F - Item in Center Room 1",
 						"visibility_rules": ["op_ovw_on"],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "B1F - Item in Center Room 2",
+						"visibility_rules": ["op_ovw_on"],
+						"item_count": 1
 					},
 					{
 						"name": "B1F - Item in East Room",
@@ -3063,7 +3114,7 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "Mirage Island Berry",
+						"name": "Berry Tree on Mirage Island",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
