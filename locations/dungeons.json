@@ -1169,8 +1169,8 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 132 - Item 1",
-						"ref": "Hoenn/Route 132/Item 1"
+						"name": "Route 132 - South Item",
+						"ref": "Hoenn/Route 132/South Item"
 					}
 				],
 				"map_locations": [
@@ -1185,8 +1185,8 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 132 - Item 2",
-						"ref": "Hoenn/Route 132/Item 2"
+						"name": "Route 132 - North Item",
+						"ref": "Hoenn/Route 132/North Item"
 					}
 				],
 				"map_locations": [
@@ -1201,24 +1201,8 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 133 - Item 1",
-						"ref": "Hoenn/Route 133/Item 1"
-					}
-				],
-				"map_locations": [
-					{
-						"map": "rt132_134",
-						"x": 1820,
-						"y": 192
-					}
-				]
-			},
-			{
-				"name": "",
-				"sections": [
-					{
-						"name": "Route 133 - Item 2",
-						"ref": "Hoenn/Route 133/Item 2"
+						"name": "Route 133 - South Item",
+						"ref": "Hoenn/Route 133/South Item"
 					}
 				],
 				"map_locations": [
@@ -1233,8 +1217,24 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 133 - Item 3",
-						"ref": "Hoenn/Route 133/Item 3"
+						"name": "Route 133 - Center Item",
+						"ref": "Hoenn/Route 133/Center Item"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "rt132_134",
+						"x": 1820,
+						"y": 192
+					}
+				]
+			},
+			{
+				"name": "",
+				"sections": [
+					{
+						"name": "Route 133 - North Item",
+						"ref": "Hoenn/Route 133/North Item"
 					}
 				],
 				"map_locations": [
@@ -1249,8 +1249,8 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 134 - Item 1",
-						"ref": "Hoenn/Route 134/Item 1"
+						"name": "Route 134 - North Item",
+						"ref": "Hoenn/Route 134/North Item"
 					}
 				],
 				"map_locations": [
@@ -1265,8 +1265,8 @@
 				"name": "",
 				"sections": [
 					{
-						"name": "Route 134 - Item 2",
-						"ref": "Hoenn/Route 134/Item 2"
+						"name": "Route 134 - South Item",
+						"ref": "Hoenn/Route 134/South Item"
 					}
 				],
 				"map_locations": [
