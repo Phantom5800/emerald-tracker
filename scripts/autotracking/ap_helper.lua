@@ -4,9 +4,11 @@ function resetItems()
 			local obj = Tracker:FindObjectForCode(v[1])
 			if obj then
 				obj.Active = false
+				obj.CurrentStage = 0
 			end
 		end
 	end
+	Tracker:FindObjectForCode("op_fer").CurrentStage = 1
 end
 
 function resetLocations() 
@@ -40,6 +42,10 @@ SLOT_CODES = {
 	overworld_items={
 		code="op_ovw", 
 		mapping=MAP_TOGGLE_REVERSE
+	},
+	berry_trees={
+		code="op_berry", 
+		mapping=MAP_TOGGLE
 	},
 	rods={
 		code="op_rod", 

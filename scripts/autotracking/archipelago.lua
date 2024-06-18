@@ -40,6 +40,33 @@ function onClear(slot_data)
 					print(string.format("onClear: remove_roadblocks: could not find object for %s (%s)", k, SLOT_CODES[k].code))
 				end
 			end
+		elseif k == "hm_requirements" then
+			local i = v["HM02 Fly"]
+			if i then
+				local ii = i[1]
+				if ii then
+					local obj = Tracker:FindObjectForCode("op_fwb")
+					if ii == "Feather Badge" then
+						obj.CurrentStage = 1 -- "Vanilla"
+					else
+						obj.CurrentStage = 0 -- "Fly Without Badge"
+					end
+				end
+			end
+		elseif k == "free_fly_location" then
+			if v == 0
+				Tracker:FindObjectForCode("op_ff").CurrentStage = 0
+			end
+		elseif k == "require_flash" then
+			-- can't be bothered reimplementing properly
+			local obj = Tracker:FindObjectForCode("op_hm5")
+			if v == 0 -- "Neither"
+			or v == 1 -- "Only Granite Cave"
+			or v == 2 then -- "Only Victory Road"
+				obj.CurrentStage = 0
+			elseif v == 3 then -- "Both"
+				obj.CurrentStage = 1
+			end
 		elseif SLOT_CODES[k] then
 			local obj = Tracker:FindObjectForCode(SLOT_CODES[k].code)
 			if obj then
