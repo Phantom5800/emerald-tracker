@@ -70,7 +70,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -102,7 +102,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -210,7 +210,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -355,14 +355,14 @@
 						"item_count": 1
 					},
 					{
-						"name": "Flower Shop Berries",
+						"name": "Flower Shop Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
 					},
 					{
-						"name": "North Berries",
+						"name": "North Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -464,7 +464,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries Behind Smashable Rock",
+						"name": "Berry Trees Behind Smashable Rock",
 						"access_rules": ["$meteorfalls_access,$can_rocksmash"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -622,7 +622,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -745,7 +745,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -854,7 +854,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -909,7 +909,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1127,7 +1127,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1849,7 +1849,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1899,7 +1899,7 @@
 						"hosted_item": "goodrod"
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"access_rules": ["$can_surf", "rt119_south_access"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -2195,7 +2195,7 @@
 						"item_count": 4
 					},
 					{
-						"name": "Berry Tree in Side Area",
+						"name": "Berry Trees in Side Area",
 						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
@@ -2554,11 +2554,18 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Tree Group 1",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
-						"item_count": 6
+						"item_count": 3
+					},
+					{
+						"name": "Berry Tree Group 2",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -2585,7 +2592,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",

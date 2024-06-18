@@ -10,10 +10,13 @@ TEAM_NUMBER = 0
 EVENT_ID=""
 KEY_ID=""
 
+LOCATION_SETS_COLLECTED = {}
+
 function onClear(slot_data)
 	CUR_INDEX = -1
 	resetLocations()
 	resetItems()
+	LOCATION_SETS_COLLECTED = {}
 
 	if slot_data == nil then
 		print("its fucked")
@@ -69,8 +72,34 @@ end
 function onLocation(location_id, location_name)
 	local v = LOCATION_MAPPING[location_id]
 	if not v or not v[1] then
+		-- if not in main list, check list of sets
+		local w = LOCATION_SETS[location_id]
+		if w and w[1] then
+			local obj = Tracker:FindObjectForCode(w[1])
+			if not obj then
+				print(string.format("onLocation: LOCATION_SETS: could not find object for code %s", w[1]))
+			else
+				--[[ just keep a counter for each group, and decrement it.
+					no need to keep track of which individual checks have been cleared,
+					as the AP server will only send each check clear once.
+				]]--
+				local amt = LOCATION_SETS_COLLECTED[w[1]]
+				if not amt or not amt[1] then
+					LOCATION_SETS_COLLECTED[w[1]] = {obj.ChestCount} -- "item_count"
+					amt = LOCATION_SETS_COLLECTED[w[1]]
+				end
+				if amt[1] > 0 then
+					amt[1] = amt[1] - 1
+				end
+				if amt[1] == 0 then
+					obj.AvailableChestCount = 0
+				end
+			end
+			return
+		else
 		print(string.format("onLocation: could not find location mapping for id %s (%s)", location_id, location_name))
 		return
+		end
 	end
 	local obj = Tracker:FindObjectForCode(v[1])
 	if obj then
