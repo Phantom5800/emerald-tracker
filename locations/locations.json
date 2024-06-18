@@ -8,6 +8,10 @@
 				"name": "Littleroot Town",
 				"sections": [
 					{
+						"name": "Pokeballs from Rival",
+						"item_count": 1
+					},
+					{
 						"name": "Amulet Coin from Mom",
 						"access_rules": ["balancebadge,recovergoods"],
 						"visibility_rules": ["op_npc_on"],
@@ -20,10 +24,16 @@
 						"item_count": 1
 					},
 					{
-						"name": "S.S. Ticket from Norman",
+						"name": "S.S. Ticket from Norman ",
 						"access_rules": ["becomechampion"],
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "ssticket"
+					},
+					{
+						"name": "Event Tickets from Norman",
+						"access_rules": ["becomechampion"],
+						"visibility_rules": ["op_ki_on"],
+						"item_count": 4
 					}
 				],
 				"map_locations": [
@@ -60,7 +70,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -90,6 +100,14 @@
 						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_ovw_on"],
 						"item_count": 1
+					},
+					{
+						"name": "Berry Trees",
+						"access_rules": ["$can_cut"],
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -115,7 +133,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Balance Badge",
+						"name": "Gym - Balance Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"access_rules": ["$norman_open"],
 						"hosted_item": "balancebadge"
@@ -151,7 +169,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM03 from Wally's Uncle",
+						"name": "HM03 from Wally's Uncle ",
 						"access_rules": ["defeatnorman"],
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm03"
@@ -192,18 +210,11 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 3
-					},
-					{
-						"name": "Berry from Girl in Flower Shop",
-						"visibility_rules": ["op_berry_on, op_npc_on"],
-						"chest_unopened_img": "images/items/berry.png",
-						"chest_opened_img": "images/items/berry_acquired.png",
-						"item_count": 1
 					}
 				],
 				"map_locations": [
@@ -326,6 +337,13 @@
 						"item_count": 1
 					},
 					{
+						"name": "Berry from Girl in Flower Shop",
+						"visibility_rules": ["op_berry_on, op_npc_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 1
+					},
+					{
 						"name": "Gift from Woman Near Berries",
 						"visibility_rules": ["op_npc_on"],
 						"item_count": 1
@@ -337,14 +355,14 @@
 						"item_count": 1
 					},
 					{
-						"name": "Flower Shop Berries",
+						"name": "Flower Shop Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
 					},
 					{
-						"name": "North Berries",
+						"name": "North Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -368,7 +386,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Stone Badge",
+						"name": "Gym - Stone Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "stonebadge"
 					},
@@ -398,7 +416,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM01 from Cutter's House",
+						"name": "HM01 from Cutter's House ",
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm01"
 					},
@@ -417,7 +435,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Letter from Mr. Stone",
+						"name": "Letter from Mr. Stone ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "letter"
 					},
@@ -446,7 +464,8 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries Behind Smashable Rock",
+						"name": "Berry Trees Behind Smashable Rock",
+						"access_rules": ["$meteorfalls_access,$can_rocksmash"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -603,7 +622,8 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
+						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -639,7 +659,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM04 from Tunneler",
+						"name": "HM04 from Tunneler ",
 						"access_rules": ["$can_rocksmash"],
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm04"
@@ -650,7 +670,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Recover Devon Goods",
+						"name": "Recover Devon Goods ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "devongoods"
 					}
@@ -725,7 +745,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -776,6 +796,11 @@
 				"name": "Route 113",
 				"access_rules": ["$fallarbor_access"],
 				"sections": [
+					{
+						"name": "Soot Sack from Glass Blower",
+						"visibility_rules": ["op_npc_on"],
+						"item_count": 1
+					},
 					{
 						"name": "Item Near Fallarbor South",
 						"visibility_rules": ["op_ovw_on"],
@@ -829,7 +854,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -884,7 +909,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -916,7 +941,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Heat Badge",
+						"name": "Gym - Heat Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "heatbadge"
 					},
@@ -942,7 +967,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Go Goggles from Rival",
+						"name": "Go Goggles from Rival ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "gogoggles"
 					}
@@ -965,7 +990,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Meteorite from Machine",
+						"name": "Meteorite from Machine ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "meteorite"
 					}
@@ -1102,7 +1127,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1127,7 +1152,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Dynamo Badge",
+						"name": "Gym - Dynamo Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "dynamobadge"
 					},
@@ -1158,7 +1183,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM06 from Rock Smash Guy",
+						"name": "HM06 from Rock Smash Guy ",
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm06"
 					},
@@ -1169,7 +1194,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Basement Key from Wattson",
+						"name": "Basement Key from Wattson ",
 						"access_rules": ["defeatnorman"],
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "basementkey"
@@ -1344,7 +1369,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "1F - HM05 from Hiker",
+						"name": "1F - HM05 from Hiker ",
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm05"
 					},
@@ -1413,7 +1438,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Knuckle Badge",
+						"name": "Gym - Knuckle Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "knucklebadge"
 					},
@@ -1428,7 +1453,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Old Rod from Fisherman",
+						"name": "Old Rod from Fisherman ",
 						"visibility_rules": ["op_rod_off"],
 						"hosted_item": "oldrod"
 					},
@@ -1488,7 +1513,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Captain's Office Key",
+						"name": "Captain's Office Key ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "storagekey"
 					},
@@ -1505,7 +1530,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HF - Hidden Item in Room 1",
+						"name": "HF - Hidden Item in Room 1 ",
 						"visibility_rules": ["op_ki_off"],
 						"access_rules": ["$can_dive,roomkey1"],
 						"hosted_item": "roomkey4"
@@ -1517,7 +1542,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HF - Item in Room 2",
+						"name": "HF - Item in Room 2 ",
 						"access_rules": ["$can_dive,roomkey2"],
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "scanner"
@@ -1535,7 +1560,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HF - Hidden Item in Room 3",
+						"name": "HF - Hidden Item in Room 3 ",
 						"visibility_rules": ["op_ki_off"],
 						"access_rules": ["$can_dive"],
 						"hosted_item": "roomkey1"
@@ -1547,7 +1572,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HF - Hidden Item in Room 4",
+						"name": "HF - Hidden Item in Room 4 ",
 						"visibility_rules": ["op_ki_off"],
 						"access_rules": ["$can_dive,roomkey4"],
 						"hosted_item": "roomkey6"
@@ -1559,7 +1584,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HF - Hidden Item in Room 5",
+						"name": "HF - Hidden Item in Room 5 ",
 						"visibility_rules": ["op_ki_off"],
 						"access_rules": ["$can_dive,roomkey6"],
 						"hosted_item": "roomkey2"
@@ -1795,7 +1820,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Itemfinder from Rival",
+						"name": "Itemfinder from Rival ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "itemfinder"
 					},
@@ -1824,7 +1849,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1868,13 +1893,14 @@
 						"item_count": 1
 					},
 					{
-						"name": "Good Rod from Fisherman",
-						"access_rules": ["$can_surf"],
+						"name": "Good Rod from Fisherman ",
+						"access_rules": ["$can_surf", "rt119_south_access"],
 						"visibility_rules": ["op_rod_off"],
 						"hosted_item": "goodrod"
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
+						"access_rules": ["$can_surf", "rt119_south_access"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -1893,10 +1919,16 @@
 				"name": "Route 119",
 				"sections": [
 					{
-						"name": "Items in South Tall Grass",
+						"name": "Item in South Tall Grass 1",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access"],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "Item in South Tall Grass 2",
+						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$rt119_south_access"],
+						"item_count": 1
 					},
 					{
 						"name": "Item Across River South",
@@ -1923,13 +1955,22 @@
 						"item_count": 1
 					},
 					{
-						"name": "Items Above North Waterfall",
+						"name": "Item Above North Waterfall 1",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": [
 							"$rt119_south_access,$can_waterfall,acrobike",
 							"$rt121_access,$can_waterfall,acrobike"
 						],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "Item Above North Waterfall 2",
+						"visibility_rules": ["op_ovw_on"],
+						"access_rules": [
+							"$rt119_south_access,$can_waterfall,acrobike",
+							"$rt121_access,$can_waterfall,acrobike"
+						],
+						"item_count": 1
 					},
 					{
 						"name": "Hidden Item Across South Rail",
@@ -1956,7 +1997,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Item South from Rival Battle",
+						"name": "Item on River Bank",
 						"visibility_rules": ["op_ovw_on"],
 						"access_rules": ["$rt119_south_access", "$rt121_access"],
 						"item_count": 1
@@ -1968,7 +2009,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM02 from Rival Battle",
+						"name": "HM02 from Rival Battle ",
 						"visibility_rules": ["op_hms_off"],
 						"access_rules": ["$rt119_south_access", "$rt121_access"],
 						"hosted_item": "hm02"
@@ -1976,7 +2017,7 @@
 					{
 						"name": "South Berry Trees",
 						"visibility_rules": ["op_berry_on"],
-						"access_rules": ["$rt119_south_access, $can_surf"],
+						"access_rules": ["$rt119_south_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 2
@@ -1993,8 +2034,8 @@
 						"name": "Berry Trees Above Waterfall",
 						"visibility_rules": ["op_berry_on"],
 						"access_rules": [
-							"$rt119_south_access,$can_waterfall,acrobike",
-							"$rt121_access,$can_waterfall,acrobike"
+							"$rt119_south_access,$can_waterfall",
+							"$rt121_access,$can_waterfall"
 						],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -2037,7 +2078,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Feather Badge",
+						"name": "Gym - Feather Badge ",
 						"access_rules": ["devonscope"],
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "featherbadge"
@@ -2135,7 +2176,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Devon Scope from Steven",
+						"name": "Devon Scope from Steven ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "devonscope"
 					},
@@ -2154,7 +2195,8 @@
 						"item_count": 4
 					},
 					{
-						"name": "Berry Tree in Side Area",
+						"name": "Berry Trees in Side Area",
+						"access_rules": ["$can_cut"],
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -2245,50 +2287,53 @@
 			},
 			{
 				"name": "Route 121",
-				"access_rules": ["$lilycove_access"],
 				"sections": [
 					{
 						"name": "Item in Maze 1",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Item in Maze 2",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Item Near Safari Zone",
 						"visibility_rules": ["op_ovw_on"],
+						"access_rules": ["$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item in Maze 1",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid]"],
+						"access_rules": ["[$hid],$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item in Maze 2",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid]"],
+						"access_rules": ["[$hid],$lilycove_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item West of Grunts",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid],$rt121_access", "[$hid],$rt121_access"],
+						"access_rules": ["[$hid],$rt121_access"],
 						"item_count": 1
 					},
 					{
 						"name": "Hidden Item Behind Tree",
 						"visibility_rules": ["op_hid_on"],
-						"access_rules": ["[$hid],$can_cut"],
+						"access_rules": ["[$hid],$lilycove_access,$can_cut"],
 						"item_count": 1
 					},
 					{
 						"name": "West Berry Trees",
 						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$rt121_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
@@ -2296,6 +2341,7 @@
 					{
 						"name": "East Berry Trees",
 						"visibility_rules": ["op_berry_on"],
+						"access_rules": ["$lilycove_access"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
 						"item_count": 4
@@ -2347,7 +2393,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Pokeblock Case from Contest Hall",
+						"name": "Pokeblock Case from Contest Hall ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "pokeblock"
 					},
@@ -2441,7 +2487,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Summit - Magma Emblem from Old Lady",
+						"name": "Summit - Magma Emblem from Old Lady ",
 						"visibility_rules": ["op_ki_off"],
 						"hosted_item": "magmaemblem"
 					}
@@ -2508,11 +2554,18 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Tree Group 1",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
-						"item_count": 6
+						"item_count": 3
+					},
+					{
+						"name": "Berry Tree Group 2",
+						"visibility_rules": ["op_berry_on"],
+						"chest_unopened_img": "images/items/berry.png",
+						"chest_opened_img": "images/items/berry_acquired.png",
+						"item_count": 3
 					}
 				],
 				"map_locations": [
@@ -2539,7 +2592,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Berries",
+						"name": "Berry Trees",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",
@@ -2574,9 +2627,14 @@
 				"access_rules": ["$can_surf,$lilycove_access,$pass_hideout"],
 				"sections": [
 					{
-						"name": "B1F - Items in Center Room",
+						"name": "B1F - Item in Center Room 1",
 						"visibility_rules": ["op_ovw_on"],
-						"item_count": 2
+						"item_count": 1
+					},
+					{
+						"name": "B1F - Item in Center Room 2",
+						"visibility_rules": ["op_ovw_on"],
+						"item_count": 1
 					},
 					{
 						"name": "B1F - Item in East Room",
@@ -2752,7 +2810,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Rain Badge",
+						"name": "Gym - Rain Badge ",
 						"access_rules": ["releaserayquaza"],
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "rainbadge"
@@ -2775,7 +2833,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM07 from Wallace",
+						"name": "HM07 from Wallace ",
 						"access_rules": ["releaserayquaza"],
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm07"
@@ -2869,7 +2927,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Gym - Mind Badge",
+						"name": "Gym - Mind Badge ",
 						"visibility_rules": ["op_bdg_off"],
 						"hosted_item": "mindbadge"
 					},
@@ -2904,7 +2962,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "HM08 from Steven's House",
+						"name": "HM08 from Steven's House ",
 						"access_rules": ["spacecenter"],
 						"visibility_rules": ["op_hms_off"],
 						"hosted_item": "hm08"
@@ -2915,7 +2973,7 @@
 						"item_count": 1
 					},
 					{
-						"name": "Super Rod from Fisherman in House",
+						"name": "Super Rod from Fisherman in House ",
 						"visibility_rules": ["op_rod_off"],
 						"hosted_item": "superrod"
 					}
@@ -3063,7 +3121,7 @@
 				"access_rules": ["$rt124_access"],
 				"sections": [
 					{
-						"name": "Mirage Island Berry",
+						"name": "Berry Tree on Mirage Island",
 						"visibility_rules": ["op_berry_on"],
 						"chest_unopened_img": "images/items/berry.png",
 						"chest_opened_img": "images/items/berry_acquired.png",

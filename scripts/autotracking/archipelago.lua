@@ -10,10 +10,13 @@ TEAM_NUMBER = 0
 EVENT_ID=""
 KEY_ID=""
 
+LOCATION_SETS_COLLECTED = {}
+
 function onClear(slot_data)
 	CUR_INDEX = -1
 	resetLocations()
 	resetItems()
+	LOCATION_SETS_COLLECTED = {}
 
 	if slot_data == nil then
 		print("its fucked")
@@ -25,13 +28,62 @@ function onClear(slot_data)
 	
 	--print(dump_table(slot_data))
 
+	--[[ If an error occurs in this `for` block, the Emerald rando devs may have changed something.
+		Make sure items.json and ap_helper.lua are updated. ]]
 	for k,v in pairs(slot_data) do
 		if k == "remove_roadblocks" then
 			for r,c in pairs(ROADBLOCK_CODES) do
-				Tracker:FindObjectForCode(c).CurrentStage = has_value(slot_data['remove_roadblocks'],r)
+				local obj = Tracker:FindObjectForCode(c)
+				if obj then
+					obj.CurrentStage = has_value(slot_data['remove_roadblocks'],r)
+				else
+					print(string.format("onClear: remove_roadblocks: could not find object for %s (%s)", k, SLOT_CODES[k].code))
+				end
+			end
+		elseif k == "hm_requirements" then
+			local i = v["HM02 Fly"]
+			if i then
+				local ii = i[1]
+				if ii then
+					local obj = Tracker:FindObjectForCode("op_fwb")
+					if ii == "Feather Badge" then
+						obj.CurrentStage = 1 -- "Vanilla"
+					else
+						obj.CurrentStage = 0 -- "Fly Without Badge"
+					end
+				end
+			end
+		elseif k == "free_fly_location" then
+			if v == 0
+				Tracker:FindObjectForCode("op_ff").CurrentStage = 0
+			end
+		elseif k == "require_flash" then
+			-- can't be bothered reimplementing properly
+			local obj = Tracker:FindObjectForCode("op_hm5")
+			if v == 0 -- "Neither"
+			or v == 1 -- "Only Granite Cave"
+			or v == 2 then -- "Only Victory Road"
+				obj.CurrentStage = 0
+			elseif v == 3 then -- "Both"
+				obj.CurrentStage = 1
 			end
 		elseif SLOT_CODES[k] then
-			Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
+			local obj = Tracker:FindObjectForCode(SLOT_CODES[k].code)
+			if obj then
+				if type(v) == "number" then
+					if SLOT_CODES[k].mapping[v] then
+						obj.CurrentStage = SLOT_CODES[k].mapping[v]
+					else
+						print(string.format("onClear: %s (%s): unexpected CurrentStage %s. Falling back to default...", k, SLOT_CODES[k].code, v))
+					end
+				else
+					print(string.format("onClear: %s (%s): unexpected CurrentStage value. Falling back to default...", k, SLOT_CODES[k].code))
+				end
+			else
+				print(string.format("onClear: could not find object for %s (%s)", k, SLOT_CODES[k].code))
+			end
+		else
+			print(string.format("onClear: could not find flag mapping for %s", k))
 		end
 	end
 
@@ -69,8 +121,34 @@ end
 function onLocation(location_id, location_name)
 	local v = LOCATION_MAPPING[location_id]
 	if not v or not v[1] then
-		--print(string.format("onLocation: could not find location mapping for id %s", location_id))
+		-- if not in main list, check list of sets
+		local w = LOCATION_SETS[location_id]
+		if w and w[1] then
+			local obj = Tracker:FindObjectForCode(w[1])
+			if not obj then
+				print(string.format("onLocation: LOCATION_SETS: could not find object for code %s", w[1]))
+			else
+				--[[ just keep a counter for each group, and decrement it.
+					no need to keep track of which individual checks have been cleared,
+					as the AP server will only send each check clear once.
+				]]--
+				local amt = LOCATION_SETS_COLLECTED[w[1]]
+				if not amt or not amt[1] then
+					LOCATION_SETS_COLLECTED[w[1]] = {obj.ChestCount} -- "item_count"
+					amt = LOCATION_SETS_COLLECTED[w[1]]
+				end
+				if amt[1] > 0 then
+					amt[1] = amt[1] - 1
+				end
+				if amt[1] == 0 then
+					obj.AvailableChestCount = 0
+				end
+			end
+			return
+		else
+		print(string.format("onLocation: could not find location mapping for id %s (%s)", location_id, location_name))
 		return
+		end
 	end
 	local obj = Tracker:FindObjectForCode(v[1])
 	if obj then
@@ -98,9 +176,11 @@ end
 
 function updateEvents(value)
 	if value ~= nil then
+		--print(string.format("updateEvents:  bit  code"))
 		local gyms = 0
 		for i, code in ipairs(FLAG_EVENT_CODES) do
 			local bit = value >> (i - 1) & 1
+			--print(string.format("               %s    \"%s\"", bit, code))
 			if i < 9 then
 				gyms = gyms + bit
 				if has("op_bdg_off") then --mark badge if unrandomized
