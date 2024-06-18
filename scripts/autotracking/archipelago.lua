@@ -28,13 +28,35 @@ function onClear(slot_data)
 	
 	--print(dump_table(slot_data))
 
+	--[[ If an error occurs in this `for` block, the Emerald rando devs may have changed something.
+		Make sure items.json and ap_helper.lua are updated. ]]
 	for k,v in pairs(slot_data) do
 		if k == "remove_roadblocks" then
 			for r,c in pairs(ROADBLOCK_CODES) do
-				Tracker:FindObjectForCode(c).CurrentStage = has_value(slot_data['remove_roadblocks'],r)
+				local obj = Tracker:FindObjectForCode(c)
+				if obj then
+					obj.CurrentStage = has_value(slot_data['remove_roadblocks'],r)
+				else
+					print(string.format("onClear: remove_roadblocks: could not find object for %s (%s)", k, SLOT_CODES[k].code))
+				end
 			end
 		elseif SLOT_CODES[k] then
-			Tracker:FindObjectForCode(SLOT_CODES[k].code).CurrentStage = SLOT_CODES[k].mapping[v]
+			local obj = Tracker:FindObjectForCode(SLOT_CODES[k].code)
+			if obj then
+				if type(v) == "number" then
+					if SLOT_CODES[k].mapping[v] then
+						obj.CurrentStage = SLOT_CODES[k].mapping[v]
+					else
+						print(string.format("onClear: %s (%s): unexpected CurrentStage %s. Falling back to default...", k, SLOT_CODES[k].code, v))
+					end
+				else
+					print(string.format("onClear: %s (%s): unexpected CurrentStage value. Falling back to default...", k, SLOT_CODES[k].code))
+				end
+			else
+				print(string.format("onClear: could not find object for %s (%s)", k, SLOT_CODES[k].code))
+			end
+		else
+			print(string.format("onClear: could not find flag mapping for %s", k))
 		end
 	end
 
@@ -127,9 +149,11 @@ end
 
 function updateEvents(value)
 	if value ~= nil then
+		--print(string.format("updateEvents:  bit  code"))
 		local gyms = 0
 		for i, code in ipairs(FLAG_EVENT_CODES) do
 			local bit = value >> (i - 1) & 1
+			--print(string.format("               %s    \"%s\"", bit, code))
 			if i < 9 then
 				gyms = gyms + bit
 				if has("op_bdg_off") then --mark badge if unrandomized
